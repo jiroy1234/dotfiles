@@ -1,0 +1,35 @@
+@define-color border rgba(0,204,255,0.9);
+@define-color bg rgba(0,0,0,0.5);
+@define-color bg1 rgba(0,0,0,0.9);
+
+#window {
+  border: 2px solid @border;
+  background-color: @bg;
+}
+
+#outer-box {
+  margin: 20px;
+}
+
+#input {
+  background-color: @bg;
+  border: 2px solid @border;
+  margin: 5px;
+}
+
+#inner-box {
+  margin: 5px;
+  background-color: @bg1;
+  border: 2px solid @border;
+  border-radius: 5px;
+}
+
+#entry {
+  margin: 5px;
+}
+
+#entry:selected {
+  margin: 5px;
+  background-color: @border;
+  border-radius: 5px;
+}

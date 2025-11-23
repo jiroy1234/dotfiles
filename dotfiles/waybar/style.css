@@ -1,0 +1,66 @@
+@define-color primary rgba(0,204,255,.9);
+@define-color bg rgba(0,0,0,0.5);
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Adwaita Sans;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg;
+    color: white;
+}
+
+tooltip {
+  background: @bg;
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+}
+
+#workspaces button.active {
+    background: @primary;
+    color: black;
+}
+
+#clock {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 0 10px;
+    background-color: @primary;
+    color: black;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#pulseaudio {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 0 10px;
+    background: @primary;
+    color: black;
+}
+
+#custom-power {
+  border-radius: 5px;
+  margin: 3px;
+  padding: 0 14px 0 10; 
+  background: @primary;
+  color: black;
+}

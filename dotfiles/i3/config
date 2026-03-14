@@ -1,0 +1,4 @@
+include binds.conf
+include autostart.conf
+include style.conf
+include windowrules.conf
